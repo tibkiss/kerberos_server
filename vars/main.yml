@@ -11,3 +11,8 @@ kerberos_server_ubuntu_pkg:
   - krb5-admin-server
   - python-selinux
 
+kerberos_server_suse_pkg:
+  - krb5
+  - krb5-server
+  - krb5-apps-servers
+
