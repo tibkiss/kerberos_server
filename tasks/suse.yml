@@ -4,7 +4,7 @@
   include_vars: "{{ ansible_os_family }}.yml"
 
 - name: Install the kerberos packages
-  yum: name={{ item }} state=present
+  zypper: name={{ item }} state=present
   with_items: "{{ kerberos_server_suse_pkg }}"
 
 - name: Copy the kdc configuration file
